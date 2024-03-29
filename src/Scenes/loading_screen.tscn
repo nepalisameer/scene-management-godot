@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1f04cmbgmtgu"]
+
+[ext_resource type="Script" path="res://Scripts/LoadingScreen.cs" id="1_k02rn"]
+
+[node name="LoadingScreen" type="CanvasLayer"]
+script = ExtResource("1_k02rn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14902, 0.14902, 0.14902, 1)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.5
+offset_top = 85.0
+offset_right = 39.5
+offset_bottom = 108.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Loading ..."
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 64.0
+offset_top = 36.0
+offset_right = -69.0
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 50.0
